@@ -46,6 +46,11 @@ public class CellPhoneApplication {
         System.out.print("Who is the owner of the phone? ");
         cellPhone2.setOwner(scanner.nextLine());
 
+        System.out.println("\n-- Creating a new Phone 3 with an overloaded constructor --");
+
+        CellPhone cellPhone3 = new CellPhone(87695,"Tecno 7", "AT % T", "8769544321", "Raymond Mush");
+
+
 
         System.out.println("\n-- Phone 1 Information --");
         display(cellPhone1);
@@ -53,10 +58,19 @@ public class CellPhoneApplication {
         System.out.println("\n-- Phone 2 Information --");
         display(cellPhone2);
 
+        System.out.println("\n-- Phone 3 Information --");
+        display(cellPhone3);
+
 
         System.out.println("\n-- Making Calls --");
         cellPhone1.dial(cellPhone2.getPhoneNumber());
         cellPhone2.dial(cellPhone1.getPhoneNumber());
+
+
+        System.out.println("\n-- Using Overload Dail Method --");
+        cellPhone1.dial(cellPhone3);
+        cellPhone3.dial(cellPhone2);
+
 
         scanner.close();
     }
