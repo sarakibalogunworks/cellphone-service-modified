@@ -60,9 +60,9 @@ public class CellPhone {
         this.owner = owner;
     }
 
-    public void dial(String phoneNumber) {
+    public void dial() {
     }
 
-    public void dail(String phoneNumber) {
+    public void dail() {
     }
 }

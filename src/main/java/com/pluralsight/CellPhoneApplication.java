@@ -55,8 +55,8 @@ public class CellPhoneApplication {
         display(cellPhone2);
 
         System.out.println("\n--- Making Calls ---");
-        cellPhone1.dial(cellPhone2.getPhoneNumber());
-        cellPhone2.dial(cellPhone1.getPhoneNumber());
+        cellPhone1.dial();
+        cellPhone2.dial();
 
         scanner.close();
 
